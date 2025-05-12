@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-size: 16px;
+    width: 100%;  
+    font-family: 'Poppins'; 
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: height calc(100vh - 12.5vh);
+    background-image: url(https://img.freepik.com/free-photo/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper_1258-101186.jpg?t=st=1744531349~exp=1744534949~hmac=58ab765d6a42fa67b45c73fe8b503ff64c280edca44c4f976a261c9a14d3a42d&w=826);
+}
+header h1{
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+}
+header p{
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px 0px;
+    text-align: center;
+}
+header img{
+    display: inline-block;
+    flex-wrap: nowrap;
+    max-width: 85px;
+    max-width: 85px;
+    justify-content: center;
+    flex-direction: row;
+}
+header .menu{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 0px;
+    width: 100%;
+    height: 10vh;
+    background-image: url(https://img.freepik.com/free-vector/blue-chaotic-abstract-background_1051-326.jpg?t=st=1745122523~exp=1745126123~hmac=d5eca28293bb00ecf18bec93c035a2dba415824df5bcbecdb8a85f9766a75f3f&w=740);
+    align-content: center;
+}
+header .nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    
+}
+header a{
+    display: flex;
+    color: white;
+    text-decoration:none;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    width: 20%;
+    padding-left: 2.vw;
+    padding-right: 2vw;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main h1{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding:  10px ;
+    justify-content: center;
+    flex-direction: column;
+}
+main h2{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding: 5px 65px;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+main h3{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding:  10px ;
+    justify-content: center;
+    flex-direction: column;
+}
+main h4{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    padding: 0px 150px;
+    justify-content: center;
+}
+main p{
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0px 15px;
+}
+main .producto{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color:  black; 
+    margin: 5px;
+    justify-items: center;
+    justify-content: center;
+
+    align-items: center;
+    width: 40%;
+}
+main .producto img{
+    justify-content: center;
+    max-width: 175px;
+    max-height: 225px;
+    padding: 10px 15px 0px;
+}
+main .producto p{
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding-top:5px;
+    text-align: center;
+    align-content: center;
+}
+main .producto small{
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    text-align: center;
+}
+.blog{
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+    padding: 15px 15px ;
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: #0b1d77;
+    padding: 20px;
+    width: 100%;
+}
+footer p{
+    color: white;
+}
+main img{
+    max-width: 50px;
+    max-height: 50px;
+}
+div .info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+}
+@media screen and (max-width:365px) {
+    *:root{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:545px) {
+    *:root{
+     font-size: 20px;
+    }
+     div .container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+    main .producto{
+     width: 30%;
+    }
+    main .producto img{
+     max-height: 250px;
+     max-width: 300px;
+    }
+    main h1{
+     width: 100%;
+    }
+    main h2{
+     width: 100%;
+    }
+ }
+@media screen and (min-width:1000px) {
+   *:root{
+    font-size: 22px;
+   }
+    div .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   main .producto{
+    width: 20%;
+   }
+   main .producto img{
+    max-height: 315px;
+    max-width: 300px;
+   }
+   main h1{
+    width: 100%;
+   }
+   main h2{
+    width: 100%;
+   }
+}
+
+
+
